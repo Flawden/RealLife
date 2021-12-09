@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG"
+    tools:context=".statusFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/ic_avatar"
+        app:layout_constraintEnd_toStartOf="@+id/stats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:text="Статистика:"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:text="Возраст: 18"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/stats" />
+
+    <TextView
+        android:id="@+id/educ"
+        android:layout_width="171dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:text="Образование:"
+        android:textColor="@color/statColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/educStatus"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:text="отсутствует"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/educ"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/educStatus2"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:text="отсутствует"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/jobs"
+        app:layout_constraintTop_toBottomOf="@+id/educStatus" />
+
+    <TextView
+        android:id="@+id/educStatus3"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:text="здоров"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/healthy"
+        app:layout_constraintTop_toBottomOf="@+id/educStatus2" />
+
+    <TextView
+        android:id="@+id/educStatus4"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:text="рад"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/enjoy"
+        app:layout_constraintTop_toBottomOf="@+id/educStatus3" />
+
+    <TextView
+        android:id="@+id/jobs"
+        android:layout_width="171dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Работа:"
+        android:textColor="@color/statColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/educ" />
+
+    <TextView
+        android:id="@+id/healthy"
+        android:layout_width="171dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Здоровье:"
+        android:textColor="@color/statColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobs" />
+
+    <TextView
+        android:id="@+id/enjoy"
+        android:layout_width="171dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Настроение:"
+        android:textColor="@color/statColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/healthy" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="143dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Прожить год"
+        android:textColor="#000000"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/educStatus4"
+        app:layout_constraintVertical_bias="0.592" />
+</androidx.constraintlayout.widget.ConstraintLayout>

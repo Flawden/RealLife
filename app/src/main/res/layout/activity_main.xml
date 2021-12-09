@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="settingActivity"
+        android:text="@string/Settings"
+        android:textColor="@color/black"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="aboutActivity"
+        android:text="@string/about"
+        android:textColor="@color/black"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="exit"
+        android:text="@string/exit"
+        android:textColor="@color/black"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="cursive"
+        android:text="@string/appname"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="gameActivity"
+        android:text="@string/start"
+        android:textColor="@color/black"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/github_link"
+        android:layout_width="187dp"
+        android:layout_height="74dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="cursive"
+        android:onClick="gitHubPage"
+        android:text="@string/github"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.317" />
+</androidx.constraintlayout.widget.ConstraintLayout>
